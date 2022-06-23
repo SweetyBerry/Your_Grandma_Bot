@@ -1,5 +1,11 @@
 import discord
 from discord.ext import commands
+import json
+import random
+
+with open('setting.json', 'r', encoding='utF8') as jfile:
+    jdata = json.load(jfile)
+
 
 bot = commands.Bot(command_prefix='-')
 
@@ -9,16 +15,27 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    channel = bot.get_channel(989142045325156372)
-    await channel.send(F'{member} join!')
+    channel = bot.get_channel(int(jdata['Welcome_channel']))
+    await channel.send(f'{member} join!')
 
 @bot.event
 async def on_member_remove(member):
-    channel = bot.get_channel(989142045325156372)
-    await channel.send(F'{member} leave!')
+    channel = bot.get_channel(int(jdata['Leave_channel']))
+    await channel.send(f'{member} leave!')
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send(F'{round(bot.latency*1000)} (ms)')
+    await ctx.send(f'{round(bot.latency*1000)} (ms)')
 
-bot.run("OTM4NzgxNTMyOTEzNTMyOTU4.GJGSu2.OiIflqq_8ACcgWiI_WY7rEh_ROkoFUUmocgWb8")
+@bot.command()
+async def 圖片(ctx):
+    random_pic = random.choice(jdata['pic'])
+    pic = discord.File(random_pic)
+    await ctx.send(file = pic)
+
+@bot.command()
+async def 食物(ctx):
+    random_pic = random.choice(jdata['url_pic'])
+    await ctx.send(random_pic)
+
+bot.run(jdata['TOKEN'])

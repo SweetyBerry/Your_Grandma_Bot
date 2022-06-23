@@ -1,0 +1,21 @@
+{
+    "TOKEN":"OTM4NzgxNTMyOTEzNTMyOTU4.GKErTC.507KlllPJrOt65y5E8MU1nq-XqzHNckADQ4Z04",
+    "Welcome_channel":"989142045325156372",
+    "Leave_channel":"989142078548246569",
+
+    "pic":[ "D:\\Github\\Your_Grandma_Bot\\picture\\1.jpg",
+            "D:\\Github\\Your_Grandma_Bot\\picture\\2.jpg",
+            "D:\\Github\\Your_Grandma_Bot\\picture\\3.jpg",
+            "D:\\Github\\Your_Grandma_Bot\\picture\\4.jpg",
+            "D:\\Github\\Your_Grandma_Bot\\picture\\5.jpg"
+        ],
+
+    "url_pic":[ "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                "https://media.istockphoto.com/photos/beef-noodle-taiwan-ramen-meal-with-tomato-sauce-broth-in-bowl-on-picture-id1161337472?k=20&m=1161337472&s=612x612&w=0&h=cAYqjYCXtZvg8bsf1PCmU6Y3_DI4N_ajz6-46PSHg3M=",
+                "https://media.istockphoto.com/photos/homemade-milk-bubble-tea-picture-id1000167478?k=20&m=1000167478&s=612x612&w=0&h=1Vzy41Hu_WONf2s4vj6AE_ptx4tHxp-Trr5o3Ba2C2o=",
+                "https://media.istockphoto.com/photos/plate-of-tofu-being-picked-up-with-chopsticks-picture-id466559879?k=20&m=466559879&s=612x612&w=0&h=00w1lPRjOSjNVge4siGIJy5SW8CPnrFVsLar6H_icO8="
+            ]
+
+}
