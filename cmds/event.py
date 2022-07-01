@@ -22,9 +22,17 @@ class Event(Cog_Extension):
 
     @commands.Cog.listener()
     async def on_message(self, msg):
-        Keyword = ['apple', 'tank', 'pie']
-        if msg.content in Keyword and msg.author != self.bot.user:
-            await msg.channel.send('apple')
+        goodnight = ['晚安', '睡', '睡了']
+        if msg.content in goodnight and msg.author != self.bot.user:
+            await msg.channel.send('死小子搞到現在才在睡')
+        if msg.content.startswith('等'):
+            await msg.channel.send('要等到民國幾年')
+        if msg.content.startswith('有人'):
+            await msg.channel.send('沒有')
+        if msg.content.startswith('ㄟ'):
+            await msg.channel.send('要找誰')
+        if msg.content.startswith('幹麻'):
+            await msg.channel.send('起來嗨!')
         if msg.content.endswith('好色'):
             random_pic = random.choice(jdata['elo_pic'])
             await msg.channel.send(random_pic)

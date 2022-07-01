@@ -25,5 +25,10 @@ class React(Cog_Extension):
         random_pic = random.choice(jdata['anime_pic'])
         await ctx.send(random_pic)
 
+    @commands.command()
+    async def 笑話(self, ctx):
+        random_pic = random.choice(jdata['laugh'])
+        await ctx.send(random_pic)
+
 def setup(bot):
     bot.add_cog(React(bot))
